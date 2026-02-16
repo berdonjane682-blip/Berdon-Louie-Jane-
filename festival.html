@@ -245,4 +245,52 @@ body {
                 <h3>Pahiyas</h3>
                 <div class="sub">Quezon City</div>
                 <p>
- 
+  One of the most popular pistas in the Philippines is the Pahiyas Festival. Every May 15, Lucban, Quezon celebrates Pahiyas to honor San Isidro Labrador, the patron saint of farmers. 
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/festivals/Pasalamat.jpg">
+            <div class="card-content">
+                <h3>Pasalamat</h3>
+                <div class="sub">Palawan</div>
+                <p>
+     Pasalamat Festival! 🙏 It's a harvest festival celebrated in Palawan, Philippines, usually in May. "Pasalamat" means "thanksgiving" in Filipino, and it's a time for locals to express gratitude for a bountiful harvest and blessings. The festival features cultural dances, music, and food. One of the highlights is the reenactment of the first arrival of migrants in Palawan.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    Created by: Berdon, Louie Jane 
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+    }
+
+    function logout() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "Index.html";
+    }
+
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "index.html";
+    }
+
+    /* Save last visited page */
+    localStorage.setItem("lastPage", window.location.href);
+
+    /* Protect page */
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "Index.html";
+    }
+</script>
+
+</body>
+</html>
