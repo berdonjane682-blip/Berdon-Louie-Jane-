@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Popular Foods</title>
+<title>Popular Places</title>
 
 <style>
 body {
@@ -210,31 +210,31 @@ body {
 <div class="navbar">
     <div class="logo">My Webpage</div>
 
-     <ul class="nav-center" id="navLinks">
-        <a href="places.html">Popular Places</a>
-        <a href="foods.html"style="color: gray; font-weight: bold;">Popular Foods</a>
-        <a href="festival.html">Popular Festivals</a>
-        <a href="cv.html"> Resume</a>
-        </ul>
+    <ul class="nav-center" id="navLinks">
+ <a href="foods.html">Popular Foods</a>
+        <a href="places.html">Popular places</a>
+       <a href="festival.html">Popular Festivals</a>
+    </ul>
+    
+    
 
     <div class="nav-right">
         <button class="logout" onclick="logout()">Logout</button>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
-</di
+</div>
 
 <!-- ================= POPULAR FOODS ================= -->
 <div class="section">
     <h2>Popular Foods</h2>
-
-    <div class="card-grid">
+ <div class="card-grid">
         <div class="card">
             <img src="images/foods/Kwek Kwek.jpg">
             <div class="card-content">
                 <h3>Kwek Kwek</h3>
                 <div class="sub">Pagadian City</div>
                 <p>
-  In Pagadian, Kwek Kwek is a beloved street food staple, known for its vibrant orange hue and addictive crunch.
+                    In Pagadian, Kwek Kwek is a beloved street food staple, known for its vibrant orange hue and addictive crunch
                 </p>
             </div>
         </div>
@@ -245,7 +245,8 @@ body {
                 <h3>Corn dog</h3>
                 <div class="sub">Pagadian City</div>
                 <p>
-                    Corn dogs in Pagadian are a snack sensation! Crunchy outside, juicy hotdog inside - perfect street food grab. 
+                    Corn dogs in Pagadian are a snack sensation! Crunchy outside, juicy hotdog inside - perfect street food grab 🔥.
+
                 </p>
             </div>
         </div>
@@ -256,7 +257,8 @@ body {
                 <h3>Pancit</h3>
                 <div class="sub">Pagadian City</div>
                 <p>
-                    Pancit Mami's the real deal here! Hearty noodles, savory sauce, and bits of meat - comfort food at its best.                </p>
+                    Pancit Mami's the real deal here! Hearty noodles, savory sauce, and bits of meat - comfort food at its best 😋.
+                </p>
             </div>
         </div>
 
@@ -264,7 +266,7 @@ body {
 </div>
 
 <div class="footer">
-    Created by: Berdon, Louie Jane 
+    Created by: Berdon 
 </div>
 
 <!-- ================= SCRIPT ================= -->
@@ -275,7 +277,7 @@ body {
 
     function logout() {
         localStorage.removeItem("isLoggedIn");
-        window.location.href = "Index.html";
+        window.location.href = "index.html";
     }
 
     if (localStorage.getItem("isLoggedIn") !== "true") {
@@ -287,9 +289,11 @@ body {
 
     /* Protect page */
     if (localStorage.getItem("isLoggedIn") !== "true") {
-        window.location.href = "Index.html";
+        window.location.href = "index.html";
     }
 </script>
 
 </body>
-</html>
+                                                  </html>
+
+    
