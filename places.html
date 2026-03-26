@@ -210,23 +210,22 @@ body {
 <div class="navbar">
     <div class="logo">My Webpage</div>
 
-     <ul class="nav-center" id="navLinks">
+    <ul class="nav-center" id="navLinks">
+       <a href="foods.html">Popular Foods</a>
         <a href="places.html"style="color: gray; font-weight: bold;">Popular Places</a>
-        <a href="foods.html">Popular Foods</a>
-        <a href="festival.html">Popular Festival</a>
+        <a href="festival.html">Popular Festivals</a>
         <a href="cv.html"> Resume</a>
-        </ul>
-
-<div class="nav-right">
+    </ul>
+    
+    <div class="nav-right">
         <button class="logout" onclick="logout()">Logout</button>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </div>
-    
+
 <!-- ================= POPULAR PLACES ================= -->
 <div class="section">
     <h2>Popular Places</h2>
-
     <div class="card-grid">
         <div class="card">
             <img src="images/places/boulevard.jpg">
@@ -234,7 +233,7 @@ body {
                 <h3>Boulevard</h3>
                 <div class="sub">Pagadian City</div>
                 <p>
-A scenic seaside boulevard popular for evening walks, local street food,
+                    A scenic seaside boulevard popular for evening walks, local street food,
                     and relaxing views of Pagadian Bay, especially during sunset.
                 </p>
             </div>
@@ -246,7 +245,7 @@ A scenic seaside boulevard popular for evening walks, local street food,
                 <h3>Palpalan Peak</h3>
                 <div class="sub">Pagadian City</div>
                 <p>
-                     A well-known mountain viewpoint offering a breathtaking panoramic view of
+                    A well-known mountain viewpoint offering a breathtaking panoramic view of
                     Pagadian City, best visited during sunrise or early morning.
                 </p>
             </div>
@@ -255,7 +254,7 @@ A scenic seaside boulevard popular for evening walks, local street food,
         <div class="card">
             <img src="images/places/plaza.jpg">
             <div class="card-content">
-                <h3>Plaza</h3>
+                <h3>Plaza Luz</h3>
                 <div class="sub">Pagadian City</div>
                 <p>
                     A central public plaza where locals gather for events, leisure activities,
@@ -268,7 +267,7 @@ A scenic seaside boulevard popular for evening walks, local street food,
 </div>
 
 <div class="footer">
-    Created by: Berdon, Louie Jane 
+    Created by: Berdon, Louie Jane L.
 </div>
 
 <!-- ================= SCRIPT ================= -->
@@ -279,7 +278,7 @@ A scenic seaside boulevard popular for evening walks, local street food,
 
     function logout() {
         localStorage.removeItem("isLoggedIn");
-        window.location.href = "Index.html";
+        window.location.href = "index.html";
     }
 
     if (localStorage.getItem("isLoggedIn") !== "true") {
@@ -291,7 +290,7 @@ A scenic seaside boulevard popular for evening walks, local street food,
 
     /* Protect page */
     if (localStorage.getItem("isLoggedIn") !== "true") {
-        window.location.href = "Index.html";
+        window.location.href = "index.html";
     }
 </script>
 
